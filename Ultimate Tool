@@ -1,0 +1,360 @@
+local tool = Instance.new("Tool")
+tool.Name = "Ultimate Tool"
+tool.RequiresHandle = false
+tool.ToolTip = 'type in chat "/e toolmode(1 – 10)" to activate other abilities'
+
+local currentMode = 1
+local function Function1()
+    local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://15061182798"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.75)
+wait(1.2)
+
+local closestDistance = math.huge
+local closestHumanoid = nil
+local Usuario = game.Players.LocalPlayer
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Humanoid") and v.RootPart and v.RootPart.Parent ~= Usuario.Character then
+        local distance = (v.RootPart.Position - Usuario.Character.HumanoidRootPart.Position).magnitude
+        if distance < closestDistance and distance <= 1000 then
+            closestDistance = distance
+            closestHumanoid = v
+        end
+    end
+end
+
+if closestHumanoid and closestHumanoid.Health ~= 0 and closestHumanoid.RootPart then
+   local gh = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(0.1)
+   local ohInstance1 = workspace[closestHumanoid.Parent.Name]["Torso"] 
+   game:GetService("ReplicatedStorage").Remote.BoogieWoogie:FireServer(ohInstance1)
+   task.wait(0.95)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = gh
+end
+end
+
+local function Function2()
+    local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://15061182798"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.75)
+wait(1.2)
+
+local closestDistance = math.huge
+local closestHumanoid = nil
+local Usuario = game.Players.LocalPlayer
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Humanoid") and v.RootPart and v.RootPart.Parent ~= Usuario.Character then
+        local distance = (v.RootPart.Position - Usuario.Character.HumanoidRootPart.Position).magnitude
+        if distance < closestDistance and distance <= 100 then
+            closestDistance = distance
+            closestHumanoid = v
+        end
+    end
+end
+
+if closestHumanoid and closestHumanoid.Health ~= 0 and closestHumanoid.RootPart then
+   local gh = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(0.1)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-246, 1e12, 2850)
+   wait(0.2)
+
+   local ohInstance1 = workspace[closestHumanoid.Parent.Name]["Torso"] 
+   game:GetService("ReplicatedStorage").Remote.BoogieWoogie:FireServer(ohInstance1)
+   task.wait(0.95)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = gh
+end
+end
+
+local function Function3()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://15061182798"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.75)
+wait(1.2)
+
+local closestDistance = math.huge
+local closestHumanoid = nil
+local Usuario = game.Players.LocalPlayer
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Humanoid") and v.RootPart and v.RootPart.Parent ~= Usuario.Character then
+        local distance = (v.RootPart.Position - Usuario.Character.HumanoidRootPart.Position).magnitude
+        if distance < closestDistance and distance <= 100 then
+            closestDistance = distance
+            closestHumanoid = v
+        end
+    end
+end
+
+if closestHumanoid and closestHumanoid.Health ~= 0 and closestHumanoid.RootPart then
+   local gh = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(0.1)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-246, -189, 2850)
+   wait(0.2)
+
+   local ohInstance1 = workspace[closestHumanoid.Parent.Name]["Torso"] 
+   game:GetService("ReplicatedStorage").Remote.BoogieWoogie:FireServer(ohInstance1)
+   task.wait(0.95)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = gh
+end
+end
+
+local function Function4()
+    local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://15061182798"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.75)
+wait(1.2)
+
+local closestDistance = math.huge
+local closestHumanoid = nil
+local Usuario = game.Players.LocalPlayer
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Humanoid") and v.RootPart and v.RootPart.Parent ~= Usuario.Character then
+        local distance = (v.RootPart.Position - Usuario.Character.HumanoidRootPart.Position).magnitude
+        if distance < closestDistance and distance <= 100 then
+            closestDistance = distance
+            closestHumanoid = v
+        end
+    end
+end
+
+if closestHumanoid and closestHumanoid.Health ~= 0 and closestHumanoid.RootPart then
+   local gh = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+   wait(0.1)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-831, -40, -60)
+   wait(0.25)
+
+   local ohInstance1 = workspace[closestHumanoid.Parent.Name]["Torso"] 
+   game:GetService("ReplicatedStorage").Remote.BoogieWoogie:FireServer(ohInstance1)
+   task.wait(0.95)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = gh
+end
+end
+
+local function Function5()
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+                local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
+                local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://16449579122"
+Anim.Name = "Testor"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+Spooky = Instance.new("Sound", game.Players.LocalPlayer.Character.Torso)
+Spooky.Name = "Hollow Punch"
+Spooky.SoundId = "rbxassetid://14737679866"
+Spooky.Volume = 3
+Spooky.PlaybackSpeed = 1
+Spooky.Looped = false
+Spooky:Play()
+ wait(8.6)
+for i = 0, 3 do
+coroutine.wrap(function()
+   local ohTable1 = {
+                ["Function"] = "Fire",
+                ["Name"] = "OmniDirectionalPunch",
+                ["rootpos"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-100 * i)
+            }
+
+            game:GetService("ReplicatedStorage").Server:InvokeServer(ohTable1)
+            game:GetService("RunService").Heartbeat:Wait()
+local animations = game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()
+for i, animation in ipairs(animations) do
+    if animation.Animation.Name ~= "Testor" then
+        animation:Stop()
+    end
+end
+            end)()
+    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
+end
+
+local function Function6()
+local players = game:GetService("Players"):GetPlayers()
+
+for _, player in ipairs(players) do
+coroutine.wrap(function()
+    if player.Character and player.Character.Humanoid.Health ~= 0 and player.Character:FindFirstChild("HumanoidRootPart") then
+local ohTable1 = {
+                ["Function"] = "Fire",
+                ["Name"] = "OmniDirectionalPunch",
+                ["rootpos"] = player.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,10)
+            }
+
+           
+game:GetService("ReplicatedStorage").Server:InvokeServer(ohTable1)
+  end
+ end)()
+end
+          wait(0.25)
+          local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+local activeTracks = humanoid:GetPlayingAnimationTracks()
+
+for _, track in pairs(activeTracks) do
+    track:Stop()
+end
+  wait(0.1)
+        local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://18774164755"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k.Looped = false
+k:Play()
+k:AdjustSpeed(1)
+end 
+
+local function Function7()
+for i = 1, 50 do
+	game:GetService("ReplicatedStorage").Remotes.colovo:FireServer()
+	end
+end
+
+local function Function8()
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://15061182798"
+local k = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(0.75)
+wait(1.2)
+
+local closestDistance = math.huge
+local closestHumanoid = nil
+local Usuario = game.Players.LocalPlayer
+
+for _, v in pairs(workspace:GetDescendants()) do
+    if v:IsA("Humanoid") and v.RootPart and v.RootPart.Parent ~= Usuario.Character then
+        local distance = (v.RootPart.Position - Usuario.Character.HumanoidRootPart.Position).magnitude
+        if distance < closestDistance and distance <= 1000 then
+            closestDistance = distance
+            closestHumanoid = v
+        end
+    end
+end
+
+if closestHumanoid and closestHumanoid.Health ~= 0 and closestHumanoid.RootPart then
+   local ohTable1 = {
+                ["Function"] = "Fire",
+                ["Name"] = "OmniDirectionalPunch",
+                ["rootpos"] = closestHumanoid.RootPart.CFrame * CFrame.new(0,0,10)
+            }
+
+           
+game:GetService("ReplicatedStorage").Server:InvokeServer(ohTable1)
+end
+end
+
+local function Function9()
+local Players = game:GetService("Players")
+                local ReplicatedStorage = game:GetService("ReplicatedStorage")
+                local TeleportInterval = 0.1
+
+                local function teleportToPlayers(player)
+                    for _, targetPlayer in pairs(Players:GetPlayers()) do
+                        if targetPlayer ~= player then
+                            player.Character:MoveTo(targetPlayer.Character.PrimaryPart.Position)
+                            ReplicatedStorage.MahitoDomainExpansion.MahitoDomainEvent:FireServer()
+                            wait(TeleportInterval)
+                        end
+                    end
+                end
+
+                local localPlayer = Players.LocalPlayer
+                teleportToPlayers(localPlayer)
+end
+
+local function Function10()
+for i = 1, 60 do
+  game:GetService("ReplicatedStorage").GojoSatoru.rush:FireServer()
+  if i == 60 then
+    wait(0.5)
+    local Players = game:GetService("Players")
+    local ReplicatedStorage = game:GetService("ReplicatedStorage")
+    local TeleportInterval = 0.4
+
+    local function teleportToHumanoids(player)
+      for _, humanoid in pairs(workspace:GetDescendants()) do
+        if humanoid:IsA("Humanoid") and humanoid.Health ~= 0 and humanoid.Parent ~= player.Character and humanoid.RootPart then
+          player.Character:MoveTo(humanoid.RootPart.Position)
+          wait(TeleportInterval)
+        end
+      end
+    end
+
+    local localPlayer = Players.LocalPlayer
+    teleportToHumanoids(localPlayer)
+    end
+   end
+end
+
+tool.Activated:Connect(function()
+    if currentMode == 1 then
+        Function1()
+    elseif currentMode == 2 then
+        Function2()
+    elseif currentMode == 3 then
+        Function3()
+    elseif currentMode == 4 then
+        Function4()
+     elseif currentMode == 5 then
+        Function5()
+     elseif currentMode == 6 then
+        Function6()
+     elseif currentMode == 7 then
+       Function7()
+     elseif currentMode == 8 then
+       Function8()
+     elseif currentMode == 9 then
+       Function9()
+     elseif currentMode == 10 then
+       Function10()
+    end
+end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if msg == "/e toolmode1" then
+        currentMode = 1
+        print("Tool mode set to 1")
+    elseif msg == "/e toolmode2" then
+        currentMode = 2
+        print("Tool mode set to 2")
+    elseif msg == "/e toolmode3" then
+        currentMode = 3
+        print("Tool mode set to 3")
+    elseif msg == "/e toolmode4" then
+        currentMode = 4
+        print("Tool mode set to 4")
+    elseif msg == "/e toolmode5" then
+        currentMode = 5
+        print("Tool mode set to 5")
+    elseif msg == "/e toolmode6" then
+        currentMode = 6
+        print("Tool mode set to 6")
+    elseif msg == "/e toolmode7" then
+        currentMode = 7
+        print("Tool mode set to 7")
+    elseif msg == "/e toolmode8" then
+        currentMode = 8
+        print("Tool mode set to 8")
+    elseif msg == "/e toolmode9" then
+        currentMode = 9
+        print("Tool mode set to 9")
+    elseif msg == "/e toolmode10" then
+        currentMode = 10
+        print("Tool mode set to 10")
+    end
+end)
+
+tool.Parent = game.Players.LocalPlayer.Backpack
